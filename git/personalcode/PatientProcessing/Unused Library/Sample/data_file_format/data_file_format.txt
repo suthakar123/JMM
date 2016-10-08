@@ -1,0 +1,78 @@
+the data.bin file consists of:
+* The status record
+* The calibration record
+* Zero or more Sensor Chunks (groups of sensor packets)
+
+/*******************************************************************************
+Status Record packets (14 bytes)
+
+These are sent immediately after connection and communicate
+global values.
+
+Byte    Description
+  0     0xA6 magic number
+  1     protocol version (currently 2)
+  2     total number of sensor records LS Byte
+  3     total number of sensor records mid Byte
+  4     total number of sensor records MS Byte
+  5     calibration record byte size, LS byte
+  6     calibration record byte size, MS byte
+  7     flex calibration value, LS byte
+  8     flex calibration value, MS byte
+  9     battery voltage at power-up time, LS byte
+ 10     battery voltage at power-up time, MS byte
+ 11     battery voltage now, LS byte
+ 13     battery voltage now, MS byte
+*******************************************************************************/
+#define COMMUNICATIONS_PROTOCOL_VERSION 2
+
+/*******************************************************************************
+Calibration Record packet (Nbytes + 3 bytes, 1019 (Atmega328) or 507 (Atmega168) bytes maximum)
+(device -> host) or (host -> device)
+
+Byte    Description
+ 0      0xA7 magic number
+ 1      calibration record byte size, LS byte
+ 2      calibration record byte size, MS byte
+ 3 to N+2   calibration data
+
+/*******************************************************************************
+Sensor Chunk headers
+
+These precede a chunk of Sensor Packets, and include the start record number
+and chunk count.
+
+Byte   Description
+ 0     0xA9 magic number
+ 1     starting sensor record sequence number LS Byte
+ 2     starting sensor record sequence number middle Byte
+ 3     starting sensor record sequence number MS Byte
+ 4     number of sensor records this chunk LS byte
+ 5     number of sensor records this chunk MS byte
+*******************************************************************************/
+Sensor packets (7 bytes)
+
+These represent the sample values, taken at a 20 sps rate.
+Least-significant bit of magic number is used for event mark,
+so a magic number of 0xAA is a sensor packet with no event mark,
+and a magic number of 0xAB is a sensor packet with an event mark.
+
+Byte   Bits   Description
+ 0      0     event mark
+ 0      1-7   0xAA    magic number
+ 1      0-7   flex value bits 0-7
+ 2      0-7   X accelerometer value bits 0-7
+ 3      0-7   Y accelerometer value bits 0-7
+ 4      0-7   Z accelerometer value bits 1-8 (bit 0 is always 0)
+ 5      0-3   flex value bits 8-11
+ 5      4-7   X accelerometer value bits 8-11
+ 6      0-3   Y accelerometer value bits 8-11
+ 6      4-6   Z accelerometer value bits 9-11
+ 6      7     not used (actually, event flag)
+*******************************************************************************/
+#define MAGIC_NUMBER_SENSOR_PACKET_NO_EVENT   0xAA
+#define MAGIC_NUMBER_SENSOR_PACKET_WITH_EVENT 0xAB
+#define MAGIC_NUMBER_EMPTY_SENSOR_PACKET 0xAC
+#define NO_SENSOR_RECORD_NUMBER (SensorRecordNumber)0xFFFFFFFFUL
+#define MAX_SENSOR_PACKETS_PER_CHUNK 420
+

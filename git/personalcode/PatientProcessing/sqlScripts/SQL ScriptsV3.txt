@@ -1,0 +1,256 @@
+create database CRA_JMM;
+
+USE CRA_JMM;
+CREATE TABLE [dbo].[Patient](
+	[patientId] [int] NOT NULL,
+	[patientFirstName] [nvarchar](50) NOT NULL,
+	[patientMiddleName] [nvarchar](50) NULL,
+	[patientLastName] [nvarchar](50) NULL,
+	[patientEnrollmentDate] [datetime] NOT NULL,
+	[plannedSurgeryDate] [datetime] NULL,
+	[actualSurgeryDate] [datetime] NULL,
+	[dateOfBirth] [datetime] NULL,
+	[gender] [nvarchar](50) NULL,
+	[patientHeight] [int] NULL,
+	[patientWeight] [int] NULL,
+	[patientMedicalRecordNumber] [nvarchar](256) NULL,
+	[doctorFirstName] [nvarchar](50) NULL,
+	[doctorMiddleName] [nvarchar](50) NULL,
+	[doctorLastName] [nvarchar](50) NULL,
+	[doctorPractiseName] [nvarchar](256) NULL,
+	[doctorAddressLine1] [nvarchar](256) NULL,
+	[doctorAddressLine2] [nvarchar](256) NULL,
+	[doctorAddressCity] [nvarchar](256) NULL,
+	[doctorAddressState] [nvarchar](256) NULL,
+	[doctorAddressPostalCode] [nvarchar](256) NULL,
+	[patientStudyType] [nvarchar](50) NULL,
+	[patientStudySide] [nvarchar](5) NULL,
+	[patientSurgicalSide] [nvarchar](5) NULL,
+	[numberOfPreSurgicalReports] [int] NULL,
+	[intervalPreSurgicalReports] [int] NULL,
+	[numberOfPostSurgicalReports] [int] NULL,
+	[intervalPostSurgicalReports] [int] NULL,
+ CONSTRAINT [PK_PatientInfo] PRIMARY KEY CLUSTERED 
+(
+	[patientId] ASC
+));
+INSERT [dbo].[Patient] ([patientId], [patientFirstName], [patientMiddleName], [patientLastName], [patientEnrollmentDate], [plannedSurgeryDate], [actualSurgeryDate], [dateOfBirth], [gender], [patientHeight], [patientWeight], [patientMedicalRecordNumber], [doctorFirstName], [doctorMiddleName], [doctorLastName], [doctorPractiseName], [doctorAddressLine1], [doctorAddressLine2], [doctorAddressCity], [doctorAddressState], [doctorAddressPostalCode], [patientStudyType], [patientStudySide], [patientSurgicalSide], [numberOfPreSurgicalReports], [intervalPreSurgicalReports], [numberOfPostSurgicalReports], [intervalPostSurgicalReports]) VALUES (1001, 'Jimmy', 'W', 'Wales', '2015-08-06', '2015-09-06', '2015-09-06', '1977-08-06', 'male', 174, 176, '1001', 'Peter', 'M', 'Jackson', 'HealthCare', '2200NE', '', 'Seattle', 'WA', 98105, 'Normal', 'Right', 'Right', 1, 1, 6, 1);
+
+/****** Object:  Table [dbo].[DefaultKneeValues]    Script Date: 05/10/2016 23:16:10 ******/
+CREATE TABLE [dbo].[DefaultKneeValues](
+	[week] [int] NOT NULL,
+	[flexionMin] [decimal](18, 2) NULL,
+	[flexionMax] [decimal](18, 2) NULL,
+	[extensionMin] [decimal](18, 2) NULL,
+	[extensionMax] [decimal](18, 2) NULL,
+	[excursionsMin] [decimal](18, 2) NULL,
+	[excursionsMax] [decimal](18, 2) NULL,
+	[modalMin] [decimal](18, 2) NULL,
+	[modalMax] [decimal](18, 2) NULL,
+ CONSTRAINT [PK_DefaultKneeValues] PRIMARY KEY CLUSTERED 
+(
+	[week] ASC
+));
+
+insert into DefaultKneeValues values('0','60','90','15','10','200','500','20','40');
+insert into DefaultKneeValues values('1','61.875','93.125','14.375','9.375','500','1093.75','21.875','43.125');
+insert into DefaultKneeValues values('2','63.75','96.25','13.75','8.75','800','1687.5','23.75','46.25');
+insert into DefaultKneeValues values('3','65.625','99.375','13.125','8.125','1100','2281.25','25.625','49.375');
+insert into DefaultKneeValues values('4','67.5','102.5','12.5','7.5','1400','2875','27.5','52.5');
+insert into DefaultKneeValues values('5','69.375','105.625','11.875','6.875','1700','3468.75','29.375','55.625');
+insert into DefaultKneeValues values('6','71.25','108.75','11.25','6.25','2000','4062.5','31.25','58.75');
+insert into DefaultKneeValues values('7','73.125','111.875','10.625','5.625','2300','4656.25','33.125','61.875');
+insert into DefaultKneeValues values('8','75','115','10','5','2600','5250','35','65');
+insert into DefaultKneeValues values('9','76.875','118.125','9.375','4.375','2900','5843.75','36.875','68.125');
+insert into DefaultKneeValues values('10','78.75','121.25','8.75','3.75','3200','6437.5','38.75','71.25');
+insert into DefaultKneeValues values('11','80.625','124.375','8.125','3.125','3500','7031.25','40.625','74.375');
+insert into DefaultKneeValues values('12','82.5','127.5','7.5','2.5','3800','7625','42.5','77.5');
+insert into DefaultKneeValues values('13','84.375','130.625','6.875','1.875','4100','8218.75','44.375','80.625');
+insert into DefaultKneeValues values('14','86.25','133.75','6.25','1.25','4400','8812.5','46.25','83.75');
+insert into DefaultKneeValues values('15','88.125','136.875','5.625','0.625','4700','9406.25','48.125','86.875');
+insert into DefaultKneeValues values('16','90','140','5','0','5000','10000','50','90');
+
+/****** Object:  Table [dbo].[Calibration]    Script Date: 05/10/2016 23:16:10 ******/
+CREATE TABLE [dbo].[Calibration](
+	[sensorId] [nvarchar](15) NOT NULL,
+	[calibrationDate] [datetime] NOT NULL,
+	[clockwiseKneeAngleC1] [decimal](19, 10) NULL,
+	[clockwiseKneeAngleC2] [decimal](19, 10) NULL,
+	[clockwiseKneeAngleC3] [decimal](19, 10) NULL,
+	[clockwiseKneeAngleC4] [decimal](19, 10) NULL,
+	[clockwiseKneeAngleC5] [decimal](19, 10) NULL,
+	[clockwiseKneeAngleC6] [decimal](19, 10) NULL,
+	[counterClockwiseKneeAngleC1] [decimal](19, 10) NULL,
+	[counterClockwiseKneeAngleC2] [decimal](19, 10) NULL,
+	[counterClockwiseKneeAngleC3] [decimal](19, 10) NULL,
+	[counterClockwiseKneeAngleC4] [decimal](19, 10) NULL,
+	[counterClockwiseKneeAngleC5] [decimal](19, 10) NULL,
+	[counterClockwiseKneeAngleC6] [decimal](19, 10) NULL,
+	[accelerationXGain] [decimal](19, 10) NULL,
+	[accelerationXOffset] [decimal](19, 10) NULL,
+	[accelerationYGain] [decimal](19, 10) NULL,
+	[accelerationYOffset] [decimal](19, 10) NULL,
+	[accelerationZGain] [decimal](19, 10) NULL,
+	[accelerationZOffset] [decimal](19, 10) NULL,
+	[gyroXGain] [decimal](19, 10) NULL,
+	[gyroXOffset] [decimal](19, 10) NULL,
+	[gyroYGain] [decimal](19, 10) NULL,
+	[gyroYOffset] [decimal](19, 10) NULL,
+	[gyroZGain] [decimal](19, 10) NULL,
+	[gyroZOffset] [decimal](19, 10) NULL,
+ CONSTRAINT [PK_Calibration_1] PRIMARY KEY CLUSTERED 
+(
+	[sensorId] ASC,
+	[calibrationDate] ASC
+));
+
+insert into Calibration values('20120','2015-02-12','-0.1514','439.6','0','0','0','0','0.1215','-232.33','0','0','0','0','0.0627','0','0.0627','0','0.0627','0','0.01526','0','0.01526','0','0.01526','0');
+insert into Calibration values('20121','2015-02-12','-0.1514','439.6','0','0','0','0','0.1215','-232.33','0','0','0','0','0.0627','0','0.0627','0','0.0627','0','0.01526','0','0.01526','0','0.01526','0');
+
+/****** Object:  Table [dbo].[Audit]    Script Date: 05/10/2016 23:16:10 ******/
+CREATE TABLE [dbo].[Audit](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[runStartTime] [nvarchar](50) NULL,
+	[runEndTime] [nvarchar](50) NULL,
+	[reportName] [nvarchar](50) NULL,
+	[statusOfRun] [nvarchar](50) NULL,
+	[errorCause] [nvarchar](100) NULL,
+	[errorCode] [int] NULL,
+ CONSTRAINT [PK_Audit] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+));
+
+/****** Object:  Table [dbo].[AlertNorms]    Script Date: 05/10/2016 23:16:10 ******/
+CREATE TABLE [dbo].[AlertNorms](
+	[week] [int] NOT NULL,
+	[maximumInactivitiyHours] [decimal](18, 2) NULL,
+	[minimumExerciseHours] [decimal](18, 2) NULL,
+	[minimumSatisfaction] [decimal](18, 2) NULL,
+	[isExpectedFeverChillsSweat] [nvarchar](50) NULL,
+	[isExpectedPainInMedication] [nvarchar](50) NULL,
+	[isExpectedSideEffects] [nvarchar](50) NULL,
+	[maximumPainRating] [decimal](18, 2) NULL,
+	[minimumPerceivedStability] [decimal](18, 2) NULL,
+	[isFallingExpected] [nvarchar](50) NULL,
+	[isAssistiveDeviceExpected] [nvarchar](50) NULL,
+	[isNegotiatingStairsExpected] [nvarchar](50) NULL,
+ CONSTRAINT [PK_AlertNorms] PRIMARY KEY CLUSTERED 
+(
+	[week] ASC
+));
+
+insert into AlertNorms values('0','16','0','3','Y','Y','Y','10','2','N','Y','N');
+insert into AlertNorms values('1','15.25','0.375','3.25','Y','Y','Y','9','2','N','Y','N');
+insert into AlertNorms values('2','14.5','0.75','3.5','Y','Y','Y','8','4','N','Y','N');
+insert into AlertNorms values('3','13.75','1.125','3.75','Y','Y','Y','7','4','N','Y','N');
+insert into AlertNorms values('4','13','1.5','4','Y','Y','Y','6','4','N','Y','N');
+insert into AlertNorms values('5','12.25','1.875','4.25','Y','Y','Y','6','5','N','Y','Y');
+insert into AlertNorms values('6','11.5','2.25','4.5','Y','Y','Y','5','5','N','Y','Y');
+insert into AlertNorms values('7','10.75','2.625','4.75','N','N','N','5','6','N','N','Y');
+insert into AlertNorms values('8','10','3','5','N','N','N','4','6','N','N','Y');
+insert into AlertNorms values('9','9.25','3.375','5.25','N','N','N','4','6','N','N','Y');
+insert into AlertNorms values('10','8.5','3.75','5.5','N','N','N','4','7','N','N','Y');
+insert into AlertNorms values('11','7.75','4.125','5.75','N','N','N','3','7','N','N','Y');
+insert into AlertNorms values('12','7','4.5','6','N','N','N','3','7','N','N','Y');
+insert into AlertNorms values('13','6.25','4.875','6.25','N','N','N','3','8','N','N','Y');
+insert into AlertNorms values('14','5.5','5.25','6.5','N','N','N','2','8','N','N','Y');
+insert into AlertNorms values('15','4.75','5.625','6.75','N','N','N','2','8','N','N','Y');
+insert into AlertNorms values('16','4','6','7','N','N','N','2','8','N','N','Y');
+
+/****** Object:  Table [dbo].[Tree]    Script Date: 05/10/2016 23:16:10 ******/
+CREATE TABLE [dbo].[Tree](
+	[treeId] [varchar](50) NOT NULL,
+	[treeName] [nvarchar](50) NULL,
+	[filePath] [nvarchar](512) NULL,
+	[samplingRate] [int] NULL,
+	[windowSize] [int] NULL,
+	[saxWindowWidth] [int] NULL,
+	[saxCardinality] [int] NULL,
+ CONSTRAINT [PK_Tree] PRIMARY KEY CLUSTERED 
+(
+	[treeId] ASC
+));
+
+INSERT [dbo].[Tree] ([treeId], [treeName], [filePath], [samplingRate], [windowSize], [saxWindowWidth], [saxCardinality]) VALUES ('N006', 'Normal_Tree_Week_6', 'C:/JointMetrix/Executable_Jar/ReleaseOn10thMay/resources/TreeFiles/4_activity_tree_v1.mat', 20, 5, 8, 21)
+
+
+/****** Object:  Table [dbo].[WeekTree]    Script Date: 05/10/2016 23:16:10 ******/
+CREATE TABLE [dbo].[WeekTree](
+	[week] [int] NOT NULL,
+	[treeId] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_WeekTree] PRIMARY KEY CLUSTERED 
+(
+	[week] ASC,
+	[treeId] ASC
+));
+INSERT [dbo].[WeekTree] ([week], [treeId]) VALUES (6, 'N006')
+
+/****** Object:  Table [dbo].[Report]    Script Date: 05/10/2016 23:16:10 ******/
+CREATE TABLE [dbo].[Report](
+	[reportId] [int] IDENTITY(1000,1) NOT NULL,
+	[patientId] [int] NOT NULL,
+	[week] [int] NULL,
+	[reportDate] [datetime] NULL,
+	[fileName] [nvarchar](256) NULL,
+	[filePath] [nvarchar](512) NULL,
+	[maxFlexion] [decimal](9, 2) NULL,
+	[maxExtension] [decimal](9, 2) NULL,
+	[flexionsPerHour] [decimal](9, 2) NULL,
+	[excursionsPerHour] [decimal](9, 2) NULL,
+	[modalExcursion] [decimal](9, 2) NULL,
+	[numberOfHoursLying] [decimal](18, 2) NULL,
+	[numberOfHoursSitting] [decimal](18, 2) NULL,
+	[numberOfHoursStanding] [decimal](18, 2) NULL,
+	[numberOfHoursWalking] [decimal](18, 2) NULL,
+	[numberOfHoursUsingStairs] [decimal](18, 2) NULL,
+	[numberOfHoursExercise] [decimal](18, 2) NULL,
+	[numberOfHoursUsingBike] [decimal](18, 2) NULL,
+	[studyDuration] [decimal](18, 2) NULL,
+ CONSTRAINT [PK_Report] PRIMARY KEY CLUSTERED 
+(
+	[reportId] ASC
+));
+
+/****** Object:  Table [dbo].[PatientSensor]    Script Date: 05/10/2016 23:16:10 ******/
+CREATE TABLE [dbo].[PatientSensor](
+	[sensorId] [nvarchar](15) NOT NULL,
+	[patientId] [int] NOT NULL,
+	[macAddress] [nvarchar](50) NULL,
+ CONSTRAINT [PK_PatientSensor] PRIMARY KEY CLUSTERED 
+(
+	[sensorId] ASC,
+	[patientId] ASC
+));
+INSERT [dbo].[PatientSensor] ([sensorId], [patientId], [macAddress]) VALUES ('20120', 1000, '20120')
+
+/****** Object:  ForeignKey [FK_PatientSensor_Patient]    Script Date: 05/10/2016 23:16:10 ******/
+ALTER TABLE [dbo].[PatientSensor]  WITH CHECK ADD  CONSTRAINT [FK_PatientSensor_Patient] FOREIGN KEY([patientId])
+REFERENCES [dbo].[Patient] ([patientId])
+GO
+ALTER TABLE [dbo].[PatientSensor] CHECK CONSTRAINT [FK_PatientSensor_Patient]
+GO
+/****** Object:  ForeignKey [FK_Report_Patient]    Script Date: 05/10/2016 23:16:10 ******/
+ALTER TABLE [dbo].[Report]  WITH CHECK ADD  CONSTRAINT [FK_Report_Patient] FOREIGN KEY([patientId])
+REFERENCES [dbo].[Patient] ([patientId])
+GO
+ALTER TABLE [dbo].[Report] CHECK CONSTRAINT [FK_Report_Patient]
+GO
+/****** Object:  ForeignKey [FK_WeekTree_AlertNorms]    Script Date: 05/10/2016 23:16:10 ******/
+ALTER TABLE [dbo].[WeekTree]  WITH CHECK ADD  CONSTRAINT [FK_WeekTree_AlertNorms] FOREIGN KEY([week])
+REFERENCES [dbo].[AlertNorms] ([week])
+GO
+ALTER TABLE [dbo].[WeekTree] CHECK CONSTRAINT [FK_WeekTree_AlertNorms]
+GO
+/****** Object:  ForeignKey [FK_WeekTree_DefaultKneeValues]    Script Date: 05/10/2016 23:16:10 ******/
+ALTER TABLE [dbo].[WeekTree]  WITH CHECK ADD  CONSTRAINT [FK_WeekTree_DefaultKneeValues] FOREIGN KEY([week])
+REFERENCES [dbo].[DefaultKneeValues] ([week])
+GO
+ALTER TABLE [dbo].[WeekTree] CHECK CONSTRAINT [FK_WeekTree_DefaultKneeValues]
+GO
+/****** Object:  ForeignKey [FK_WeekTree_Tree]    Script Date: 05/10/2016 23:16:10 ******/
+ALTER TABLE [dbo].[WeekTree]  WITH CHECK ADD  CONSTRAINT [FK_WeekTree_Tree] FOREIGN KEY([treeId])
+REFERENCES [dbo].[Tree] ([treeId])
+GO
+ALTER TABLE [dbo].[WeekTree] CHECK CONSTRAINT [FK_WeekTree_Tree]
+GO

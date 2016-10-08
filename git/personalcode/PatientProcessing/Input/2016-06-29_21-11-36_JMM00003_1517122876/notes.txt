@@ -1,0 +1,14 @@
+Which Knee: RIGHT
+Satisfaction: 6.4/10
+Pain Level: 6.4/10
+Fevers: NO
+Chills: NO
+Sweats: YES
+Pain Meds: YES
+Side Effects: YES
+Pain Occurs: During Activity
+Stability Walking: 6.4/10
+Falls In 24 Hours: YES
+Using Walking Assists: YES
+Using Stairs: YES
+Device ID: JMM00003

@@ -1,0 +1,9 @@
+gnujpdf is under the LGPL
+
+Modifications made:
+1) Added helveticaneue font translations in PDFFont.java
+2) Added support for rotated strings in PDFGraphics.java
+3) Fixed bug where fonts were not being properly changed in PDFFont.java
+
+imgscalr:
+http://www.thebuzzmedia.com/software/imgscalr-java-image-scaling-library/

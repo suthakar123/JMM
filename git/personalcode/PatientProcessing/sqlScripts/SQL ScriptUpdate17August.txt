@@ -1,0 +1,209 @@
+use CRA_JMM
+  ALTER TABLE Report
+  Drop column numberOfHoursUsingStairs;
+  
+  use CRA_JMM
+  ALTER TABLE Report
+  add numberOfHoursUsingStairsUp decimal(18,2);
+
+  use CRA_JMM
+  ALTER TABLE Report
+  ADD numberOfHoursUsingStairsDown decimal(18,2);
+  
+  use CRA_JMM
+  INSERT INTO [Calibration]
+           ([sensorId]
+           ,[calibrationDate]
+           ,[clockwiseKneeAngleC1]
+           ,[clockwiseKneeAngleC2]
+           ,[clockwiseKneeAngleC3]
+           ,[clockwiseKneeAngleC4]
+           ,[clockwiseKneeAngleC5]
+           ,[clockwiseKneeAngleC6]
+           ,[counterClockwiseKneeAngleC1]
+           ,[counterClockwiseKneeAngleC2]
+           ,[counterClockwiseKneeAngleC3]
+           ,[counterClockwiseKneeAngleC4]
+           ,[counterClockwiseKneeAngleC5]
+           ,[counterClockwiseKneeAngleC6]
+           ,[accelerationXGain]
+           ,[accelerationXOffset]
+           ,[accelerationYGain]
+           ,[accelerationYOffset]
+           ,[accelerationZGain]
+           ,[accelerationZOffset]
+           ,[gyroXGain]
+           ,[gyroXOffset]
+           ,[gyroYGain]
+           ,[gyroYOffset]
+           ,[gyroZGain]
+           ,[gyroZOffset])
+     VALUES
+           ('JM000008'
+           ,'2016-08-03 00:00:00.000'
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0627000000
+           ,0.0000000000
+           ,0.0627000000
+           ,0.0000000000
+           ,0.0627000000
+           ,0.0000000000
+           ,0.0152600000
+           ,0.0000000000
+           ,0.0152600000
+           ,0.0000000000
+           ,0.0152600000
+           ,0.0000000000);
+
+use CRA_JMM
+  INSERT INTO [Calibration]
+           ([sensorId]
+           ,[calibrationDate]
+           ,[clockwiseKneeAngleC1]
+           ,[clockwiseKneeAngleC2]
+           ,[clockwiseKneeAngleC3]
+           ,[clockwiseKneeAngleC4]
+           ,[clockwiseKneeAngleC5]
+           ,[clockwiseKneeAngleC6]
+           ,[counterClockwiseKneeAngleC1]
+           ,[counterClockwiseKneeAngleC2]
+           ,[counterClockwiseKneeAngleC3]
+           ,[counterClockwiseKneeAngleC4]
+           ,[counterClockwiseKneeAngleC5]
+           ,[counterClockwiseKneeAngleC6]
+           ,[accelerationXGain]
+           ,[accelerationXOffset]
+           ,[accelerationYGain]
+           ,[accelerationYOffset]
+           ,[accelerationZGain]
+           ,[accelerationZOffset]
+           ,[gyroXGain]
+           ,[gyroXOffset]
+           ,[gyroYGain]
+           ,[gyroYOffset]
+           ,[gyroZGain]
+           ,[gyroZOffset])
+     VALUES
+           ('JM000006'
+           ,'2016-08-17 00:00:00.000'
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0627000000
+           ,0.0000000000
+           ,0.0627000000
+           ,0.0000000000
+           ,0.0627000000
+           ,0.0000000000
+           ,0.0152600000
+           ,0.0000000000
+           ,0.0152600000
+           ,0.0000000000
+           ,0.0152600000
+           ,0.0000000000);
+           
+ use CRA_JMM
+  INSERT INTO [Calibration]
+           ([sensorId]
+           ,[calibrationDate]
+           ,[clockwiseKneeAngleC1]
+           ,[clockwiseKneeAngleC2]
+           ,[clockwiseKneeAngleC3]
+           ,[clockwiseKneeAngleC4]
+           ,[clockwiseKneeAngleC5]
+           ,[clockwiseKneeAngleC6]
+           ,[counterClockwiseKneeAngleC1]
+           ,[counterClockwiseKneeAngleC2]
+           ,[counterClockwiseKneeAngleC3]
+           ,[counterClockwiseKneeAngleC4]
+           ,[counterClockwiseKneeAngleC5]
+           ,[counterClockwiseKneeAngleC6]
+           ,[accelerationXGain]
+           ,[accelerationXOffset]
+           ,[accelerationYGain]
+           ,[accelerationYOffset]
+           ,[accelerationZGain]
+           ,[accelerationZOffset]
+           ,[gyroXGain]
+           ,[gyroXOffset]
+           ,[gyroYGain]
+           ,[gyroYOffset]
+           ,[gyroZGain]
+           ,[gyroZOffset])
+     VALUES
+           ('JM000005'
+           ,'2016-08-03 00:00:00.000'
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0000000000
+           ,0.0627000000
+           ,0.0000000000
+           ,0.0627000000
+           ,0.0000000000
+           ,0.0627000000
+           ,0.0000000000
+           ,0.0152600000
+           ,0.0000000000
+           ,0.0152600000
+           ,0.0000000000
+           ,0.0152600000
+           ,0.0000000000);
+  
+  use CRA_JMM
+INSERT INTO [PatientSensor]
+           ([sensorId]
+           ,[patientId]
+           ,[macAddress])
+     VALUES
+           ('JM000005'
+           ,1000
+           ,'JM000005');
+           
+use CRA_JMM
+INSERT INTO [PatientSensor]
+           ([sensorId]
+           ,[patientId]
+           ,[macAddress])
+     VALUES
+           ('JM000006'
+           ,1000
+           ,'JM000006');
+           
+use CRA_JMM
+INSERT INTO [PatientSensor]
+           ([sensorId]
+           ,[patientId]
+           ,[macAddress])
+     VALUES
+           ('JM000008'
+           ,1000
+           ,'JM000008');

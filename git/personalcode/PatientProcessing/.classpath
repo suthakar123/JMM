@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/itextpdf-5.5.8-sources.jar"/>
+	<classpathentry kind="lib" path="lib/itextpdf-5.5.8.jar"/>
+	<classpathentry kind="lib" path="lib/javabuilder.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject10thMay.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject10thMay2.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject4thFeb.jar"/>
+	<classpathentry kind="lib" path="lib/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="resources/KneeProject0721v3.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject0812.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject0812v1.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject0812v2.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject0812v4.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject0812v5.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject0812v6.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject0812v7.jar"/>
+	<classpathentry kind="lib" path="lib/KneeProject0817.jar"/>
+	<classpathentry kind="lib" path="C:/Users/suthakar/git/personalcode/PatientProcessing/resources"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

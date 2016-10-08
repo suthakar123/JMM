@@ -1,0 +1,6 @@
+MANIFEST.txt
+dataformat.txt
+data_file_format.txt
+data_file_interpretation.txt
+read_data_bin.rb
+sample.zip

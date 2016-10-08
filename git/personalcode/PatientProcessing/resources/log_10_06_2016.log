@@ -1,0 +1,84 @@
+Thu Oct 06 23:38:59 PDT 2016 FINE: Time before in Constructor 1
+Thu Oct 06 23:38:59 PDT 2016 INFO: Loading the Zip file...
+Thu Oct 06 23:38:59 PDT 2016 FINE: Loading the cal.bin file...
+Thu Oct 06 23:38:59 PDT 2016 INFO: Calibration command6
+Thu Oct 06 23:38:59 PDT 2016 INFO: Calibration length64
+Thu Oct 06 23:38:59 PDT 2016 INFO: --0th coefficeint -0.08270739
+Thu Oct 06 23:38:59 PDT 2016 INFO: --1th coefficeint 187.49767
+Thu Oct 06 23:38:59 PDT 2016 INFO: --2th coefficeint 0.0
+Thu Oct 06 23:38:59 PDT 2016 INFO: --3th coefficeint 0.0
+Thu Oct 06 23:38:59 PDT 2016 INFO: --4th coefficeint 0.0
+Thu Oct 06 23:38:59 PDT 2016 INFO: --5th coefficeint 0.0
+Thu Oct 06 23:38:59 PDT 2016 INFO: --6th coefficeint 1.0
+Thu Oct 06 23:38:59 PDT 2016 INFO: --7th coefficeint 2.0
+Thu Oct 06 23:38:59 PDT 2016 INFO: --8th coefficeint 3.0
+Thu Oct 06 23:38:59 PDT 2016 INFO: --9th coefficeint 4.0
+Thu Oct 06 23:38:59 PDT 2016 INFO: --10th coefficeint 5.0
+Thu Oct 06 23:38:59 PDT 2016 INFO: --11th coefficeint 6.0
+Thu Oct 06 23:39:00 PDT 2016 FINE: Successfully Loaded cal.bin file
+Thu Oct 06 23:39:00 PDT 2016 FINE: Loading the data.bin file...
+Thu Oct 06 23:39:00 PDT 2016 INFO: Starting PatientProcessingFrame.processDataFile()
+Thu Oct 06 23:39:00 PDT 2016 FINE: Session StartHeader 12
+Thu Oct 06 23:39:00 PDT 2016 FINE: lengthOfSession 85777
+Thu Oct 06 23:39:00 PDT 2016 FINE: Resistive Samples 11336
+Thu Oct 06 23:39:00 PDT 2016 FINE: Resistive Pages 67
+Thu Oct 06 23:39:00 PDT 2016 FINE: Resistive Page Size 254
+Thu Oct 06 23:39:00 PDT 2016 FINE: Last Resistive Page Size 122
+Thu Oct 06 23:39:00 PDT 2016 FINE: Acceleration Samples 11336
+Thu Oct 06 23:39:00 PDT 2016 FINE: Acceleration Pages 145
+Thu Oct 06 23:39:00 PDT 2016 FINE: Acceleration Page Size 236
+Thu Oct 06 23:39:00 PDT 2016 FINE: Last Acceleration Page Size 80
+Thu Oct 06 23:39:00 PDT 2016 FINE: Gyro Samples 5668
+Thu Oct 06 23:39:00 PDT 2016 FINE: Gyro Pages 145
+Thu Oct 06 23:39:00 PDT 2016 FINE: Gyro Page Size 236
+Thu Oct 06 23:39:00 PDT 2016 FINE: Last Gyro Page Size 80
+Thu Oct 06 23:39:00 PDT 2016 FINE: Patient Marker Num 1
+Thu Oct 06 23:39:00 PDT 2016 FINE: Restart Marker 0
+Thu Oct 06 23:39:00 PDT 2016 FINE: Crc 54007
+Thu Oct 06 23:39:00 PDT 2016 FINE: checking clockwise Resistive data match success: true
+Thu Oct 06 23:39:00 PDT 2016 FINE: calculated number of resistives11336
+Thu Oct 06 23:39:00 PDT 2016 FINE: checking clockwise Resistive data match success: true
+Thu Oct 06 23:39:00 PDT 2016 FINE: calculated number of resistives11336
+Thu Oct 06 23:39:00 PDT 2016 FINE: Actual acceleration page size: 11336
+Thu Oct 06 23:39:00 PDT 2016 FINE: checking Acceleration data match success: 11336
+Thu Oct 06 23:39:00 PDT 2016 FINE: checking gyro data match success: true
+Thu Oct 06 23:39:00 PDT 2016 FINE: patientMarkerSampleIndex2299695
+Thu Oct 06 23:39:00 PDT 2016 FINE: restartSampleIndex4294967295
+Thu Oct 06 23:39:00 PDT 2016 FINE: Completed PatientProcessingFrame.processDataFile()
+Thu Oct 06 23:39:00 PDT 2016 FINE: Successfully Loaded data.bin file
+Thu Oct 06 23:39:00 PDT 2016 FINE: Loading the notes.txt file...
+Thu Oct 06 23:39:00 PDT 2016 FINE: Starting PatientProcessingFrame.processAnswers()
+Thu Oct 06 23:39:00 PDT 2016 FINE: Ending PatientProcessingFrame.processAnswers()
+Thu Oct 06 23:39:00 PDT 2016 FINE: Successfully Loaded notes.txt file
+Thu Oct 06 23:39:00 PDT 2016 FINE: Loading the photo.jpg file...
+Thu Oct 06 23:39:00 PDT 2016 FINE: Successfully Loaded photo.jpg file
+Thu Oct 06 23:39:00 PDT 2016 FINE: Done
+Thu Oct 06 23:39:00 PDT 2016 FINE: Time for processing incoming file 482
+Thu Oct 06 23:39:00 PDT 2016 INFO: Loading from Database for sensorID...JM000129
+Thu Oct 06 23:39:00 PDT 2016 FINE: Weeks186
+Thu Oct 06 23:39:00 PDT 2016 FINE: Time for fetching from database 688
+Thu Oct 06 23:39:04 PDT 2016 FINE: Starting the phase to get SensorData
+Thu Oct 06 23:39:05 PDT 2016 FINE: Completed to fetch SensorData
+Thu Oct 06 23:39:05 PDT 2016 FINE: Time for CalibrateData 244
+Thu Oct 06 23:39:11 PDT 2016 FINE: Time for ClassifyData 6055
+Thu Oct 06 23:39:11 PDT 2016 INFO: Time for Excursions 130
+Thu Oct 06 23:39:11 PDT 2016 FINE: Max Flexion 76
+Thu Oct 06 23:39:11 PDT 2016 FINE: Max Extension 15
+Thu Oct 06 23:39:11 PDT 2016 FINE: Excursions per hour 5111
+Thu Oct 06 23:39:11 PDT 2016 FINE: Modal Exursions 44
+Thu Oct 06 23:39:11 PDT 2016 FINE: Time taken by Matlab execution 10838
+Thu Oct 06 23:39:11 PDT 2016 INFO: Generating the PDF Report...
+Thu Oct 06 23:39:11 PDT 2016 FINE: AlertNorms Values 18.25 Y Y Y 5.0 5.0 N Y Y
+Thu Oct 06 23:39:11 PDT 2016 FINE: Printing the alerts
+Thu Oct 06 23:39:11 PDT 2016 FINE: Pain rating outside normal limits
+Thu Oct 06 23:39:11 PDT 2016 FINE: Patient Stability below Normal
+Thu Oct 06 23:39:11 PDT 2016 FINE: Trouble while Negotiating Stairs
+Thu Oct 06 23:39:11 PDT 2016 FINE: Patient not performing exercises
+Thu Oct 06 23:39:11 PDT 2016 FINE: Patient Reduced Bike usage
+Thu Oct 06 23:39:11 PDT 2016 FINE: Completed Alert Strings
+Thu Oct 06 23:39:12 PDT 2016 FINE: Time to generate the report file 558
+Thu Oct 06 23:39:12 PDT 2016 INFO: Not saving the report as previous report of the same week exists
+Thu Oct 06 23:39:12 PDT 2016 FINE: Time to save report 26
+Thu Oct 06 23:39:12 PDT 2016 INFO: Completed the call
+Thu Oct 06 23:39:12 PDT 2016 FINE: Total time taken is 12593
+Thu Oct 06 23:39:12 PDT 2016 INFO:  Successfully executed 

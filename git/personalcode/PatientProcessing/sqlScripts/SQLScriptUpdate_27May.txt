@@ -1,0 +1,7 @@
+ use CRA_JMM;
+// Set the path to the tree file on your local drive.
+alter table Tree set filePath='C:/JointMetrix/Executable_Jar/ReleaseOn10thMay/resources/TreeFiles/4_activity_tree_v1.mat';
+
+alter table Report add zipFileName nvarchar(512)
+alter table Audit  add zipFileName nvarchar(512);
+  

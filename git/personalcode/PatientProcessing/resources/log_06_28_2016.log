@@ -1,0 +1,73 @@
+Tue Jun 28 16:43:58 PDT 2016 FINE: Time before in Constructor 1
+Tue Jun 28 16:43:58 PDT 2016 INFO: Loading the Zip file...
+Tue Jun 28 16:43:58 PDT 2016 FINE: Loading the calibration.txt file...
+Tue Jun 28 16:43:58 PDT 2016 FINE: Starting PatientProcessingFrame.processCalibration()
+Tue Jun 28 16:43:58 PDT 2016 FINE: suthakar printing cal-0.1514
+Tue Jun 28 16:43:58 PDT 2016 FINE: suthakar printing cal439.6
+Tue Jun 28 16:43:58 PDT 2016 FINE: Successfully Loaded calibration.txt file
+Tue Jun 28 16:43:58 PDT 2016 FINE: Loading the data.bin file...
+Tue Jun 28 16:43:58 PDT 2016 INFO: Starting PatientProcessingFrame.processDataFile()
+Tue Jun 28 16:43:58 PDT 2016 FINE: Session StartHeader 12
+Tue Jun 28 16:43:58 PDT 2016 FINE: lengthOfSession 996167
+Tue Jun 28 16:43:58 PDT 2016 FINE: Resistive Samples 89978
+Tue Jun 28 16:43:58 PDT 2016 FINE: Resistive Pages 535
+Tue Jun 28 16:43:58 PDT 2016 FINE: Resistive Page Size 254
+Tue Jun 28 16:43:58 PDT 2016 FINE: Last Resistive Page Size 149
+Tue Jun 28 16:43:58 PDT 2016 FINE: Acceleration Samples 119652
+Tue Jun 28 16:43:58 PDT 2016 FINE: Acceleration Pages 1533
+Tue Jun 28 16:43:58 PDT 2016 FINE: Acceleration Page Size 236
+Tue Jun 28 16:43:58 PDT 2016 FINE: Last Acceleration Page Size 236
+Tue Jun 28 16:43:58 PDT 2016 FINE: Gyro Samples 59826
+Tue Jun 28 16:43:58 PDT 2016 FINE: Gyro Pages 1533
+Tue Jun 28 16:43:58 PDT 2016 FINE: Gyro Page Size 236
+Tue Jun 28 16:43:58 PDT 2016 FINE: Last Gyro Page Size 236
+Tue Jun 28 16:43:58 PDT 2016 FINE: Patient Marker Num 2
+Tue Jun 28 16:43:58 PDT 2016 FINE: Restart Marker 0
+Tue Jun 28 16:43:58 PDT 2016 FINE: Crc 55773
+Tue Jun 28 16:43:58 PDT 2016 FINE: checking clockwise Resistive data match success: true
+Tue Jun 28 16:43:59 PDT 2016 FINE: checking clockwise Resistive data match success: true
+Tue Jun 28 16:43:59 PDT 2016 FINE: checking Acceleration data match success: true
+Tue Jun 28 16:43:59 PDT 2016 FINE: checking gyro data match success: true
+Tue Jun 28 16:43:59 PDT 2016 FINE: patientMarkerSampleIndex5841939
+Tue Jun 28 16:43:59 PDT 2016 FINE: restartSampleIndex22747285
+Tue Jun 28 16:43:59 PDT 2016 FINE: Completed PatientProcessingFrame.processDataFile()
+Tue Jun 28 16:43:59 PDT 2016 FINE: Successfully Loaded data.bin file
+Tue Jun 28 16:43:59 PDT 2016 FINE: Loading the notes.txt file...
+Tue Jun 28 16:43:59 PDT 2016 FINE: Starting PatientProcessingFrame.processAnswers()
+Tue Jun 28 16:43:59 PDT 2016 FINE: Ending PatientProcessingFrame.processAnswers()
+Tue Jun 28 16:43:59 PDT 2016 FINE: Successfully Loaded notes.txt file
+Tue Jun 28 16:43:59 PDT 2016 FINE: Loading the photo.jpg file...
+Tue Jun 28 16:43:59 PDT 2016 FINE: Successfully Loaded photo.jpg file
+Tue Jun 28 16:43:59 PDT 2016 FINE: Done
+Tue Jun 28 16:43:59 PDT 2016 FINE: Time for processing incoming file 574
+Tue Jun 28 16:43:59 PDT 2016 INFO: Loading from Database for sensorID...20120
+Tue Jun 28 16:43:59 PDT 2016 FINE: Weeks164
+Tue Jun 28 16:43:59 PDT 2016 FINE: Time for fetching from database 692
+Tue Jun 28 16:44:04 PDT 2016 FINE: Starting the phase to get SensorData
+Tue Jun 28 16:44:06 PDT 2016 FINE: Completed to fetch SensorData
+Tue Jun 28 16:44:07 PDT 2016 FINE: Time for CalibrateData 355
+Tue Jun 28 16:44:45 PDT 2016 FINE: Time for ClassifyData 38780
+Tue Jun 28 16:44:46 PDT 2016 INFO: Time for Excursions 277
+Tue Jun 28 16:44:46 PDT 2016 FINE: Max Flexion 71
+Tue Jun 28 16:44:46 PDT 2016 FINE: Max Extension 33
+Tue Jun 28 16:44:46 PDT 2016 FINE: Excursions per hour 1369
+Tue Jun 28 16:44:46 PDT 2016 FINE: Modal Exursions 31
+Tue Jun 28 16:44:46 PDT 2016 FINE: Time taken by Matlab execution 46460
+Tue Jun 28 16:44:46 PDT 2016 INFO: Generating the PDF Report...
+Tue Jun 28 16:44:46 PDT 2016 FINE: AlertNorms Values 18.25 Y Y Y 5.0 5.0 N Y Y
+Tue Jun 28 16:44:46 PDT 2016 FINE: Printing the alerts
+Tue Jun 28 16:44:46 PDT 2016 FINE: Patient experiencing Unexpected pain
+Tue Jun 28 16:44:46 PDT 2016 FINE: Pain rating outside normal limits
+Tue Jun 28 16:44:46 PDT 2016 FINE: Patient Falling regularly
+Tue Jun 28 16:44:46 PDT 2016 FINE: UnExpected Assistive Device Requested.
+Tue Jun 28 16:44:46 PDT 2016 FINE: Trouble while Negotiating Stairs
+Tue Jun 28 16:44:46 PDT 2016 FINE: Patient not performing exercises
+Tue Jun 28 16:44:46 PDT 2016 FINE: Walking has decreased
+Tue Jun 28 16:44:46 PDT 2016 FINE: Patient Reduced Bike usage
+Tue Jun 28 16:44:46 PDT 2016 FINE: Completed Alert Strings
+Tue Jun 28 16:44:46 PDT 2016 FINE: Time to generate the report file 644
+Tue Jun 28 16:44:46 PDT 2016 INFO: Not saving the report as previous report of the same week exists
+Tue Jun 28 16:44:46 PDT 2016 FINE: Time to save report 30
+Tue Jun 28 16:44:46 PDT 2016 INFO: Completed the call
+Tue Jun 28 16:44:46 PDT 2016 FINE: Total time taken is 48401
+Tue Jun 28 16:44:46 PDT 2016 INFO:  Successfully executed 

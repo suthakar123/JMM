@@ -1,0 +1,32 @@
+Server: http://mct-stage.ecardio.com:7472/jointmetrix/home/fileupload
+Timeout: 6 minutes
+Container format: .ZIP archive format
+Container name: YYYY-MM-DD-HH-MM-SS_<randomnumber>.zip
+	example: 2013-02-07-11-13-23_2123456789.zip
+	length of <randomnumber> part could be from 1 to 10 digits
+
+In the description below of notes.txt file format:
+"{" and "}" surround responses
+"|" separates alternatives
+and "\n" means newline (ASCII 0x0A)
+the {0-10} items have a single decimal place to the right of the decimal point (i.e. "3.4")
+
+ZIP archive contents:
+======= data.bin ======= 
+<see attached description of this file's format>
+======= notes.txt =======
+Which Knee: {LEFT|RIGHT}\n
+Satifaction: {0-10}/10\n
+Pain Level: {0-10}/10\n
+Fevers: {YES|NO|Undecided}\n
+Chills: {YES|NO|Undecided}\n
+Sweats: {YES|NO|Undecided}\n
+Pain Meds: {YES|NO|Undecided}\n
+Side Effects: {YES|NO|Undecided}\n
+Pain Occurs: {At Rest|During Activity|All the time}\n
+Stability Walking: {0-10}/10\n
+Falls In 24 Hours: {YES|NO|Undecided}\n
+Using Walking Assists: {YES|NO|Undecided}\n
+Using Stairs: {YES|NO|Undecided}\n
+======= photo.jpg ======= 
+JPEG (JFIF) photograph, quality=50

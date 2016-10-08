@@ -1,0 +1,2 @@
+TreeFileName:		 	TreeFiles/tree010_21_8.mat
+TreeDatafromDatabase:    20     5     8   21

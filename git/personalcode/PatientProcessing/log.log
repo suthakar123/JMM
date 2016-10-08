@@ -1,0 +1,21 @@
+Tue Apr 26 17:33:53 PDT 2016 FINE: Time before in Constructor 1
+Tue Apr 26 17:33:53 PDT 2016 INFO: Loading the Zip file...
+Tue Apr 26 17:33:58 PDT 2016 FINE: Loading the data.bin file...
+Tue Apr 26 17:34:01 PDT 2016 FINE: Session StartHeader 12
+Tue Apr 26 17:34:01 PDT 2016 FINE: lengthOfSession 16535
+Tue Apr 26 17:34:01 PDT 2016 FINE: Resistive Samples 1502
+Tue Apr 26 17:34:01 PDT 2016 FINE: Resistive Page Size 254
+Tue Apr 26 17:34:01 PDT 2016 FINE: Last Resistive Page Size 239
+Tue Apr 26 17:34:01 PDT 2016 FINE: Acceleration Samples 1976
+Tue Apr 26 17:34:01 PDT 2016 FINE: Acceleration Pages 25
+Tue Apr 26 17:34:01 PDT 2016 FINE: Acceleration Page Size 236
+Tue Apr 26 17:34:01 PDT 2016 FINE: Last Acceleration Page Size 80
+Tue Apr 26 17:34:01 PDT 2016 FINE: Gyro Samples 988
+Tue Apr 26 17:34:01 PDT 2016 FINE: Gyro Pages 25
+Tue Apr 26 17:34:01 PDT 2016 FINE: Gyro Page Size 236
+Tue Apr 26 17:34:01 PDT 2016 FINE: Last Gyro Page Size 80
+Tue Apr 26 17:34:01 PDT 2016 FINE: Restart Marker 0
+Tue Apr 26 17:34:01 PDT 2016 FINE: Crc 6424
+Tue Apr 26 17:34:01 PDT 2016 FINE: patientMarkerSampleIndex4294967295
+Tue Apr 26 17:34:01 PDT 2016 FINE: restartSampleIndex4294967295
+Tue Apr 26 17:34:01 PDT 2016 FINE: Starting the phase to get SensorData
